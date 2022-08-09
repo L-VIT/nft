@@ -1,0 +1,161 @@
+.nft {
+    margin-bottom: 100px;
+
+    .nft__inner {
+        @extend %flex-center;
+        align-items: flex-start;
+
+        .nft__info {
+            width: 45%;
+
+            &-title {
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 77px;
+                margin-bottom: 15px;
+            }
+
+            &-text {
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 25px;
+                max-width: 300px;
+            }
+
+            &-link {
+                @extend %btn;
+                padding: 10px 50px;
+                display: inline-block;
+                margin-bottom: 100px;
+            }
+
+            &-total {
+                @extend %flex-center;
+
+
+                .total__item {
+                    font-weight: 700;
+
+                    &-num {
+                        font-size: 36px;
+                        line-height: 46px;
+                    }
+
+                    &-text {
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #E5E5E5;
+                    }
+                }
+            }
+        }
+
+
+
+        .nft__example {
+            width: 45%;
+            background-color: #30384D;
+            border-radius: 10px;
+            padding: 20px;
+
+            &-img {
+                display: block;
+                border-radius: 6px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            &-title {
+                @extend %flex-center;
+                margin-bottom: 10px;
+
+                .nft__example-name {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+
+                .nft__example-folowers {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 20px;
+
+
+                    .nft__example-folower {
+                        position: relative;
+                        margin-right: -16px;
+                        transition: $transition;
+                        width: 35px;
+                        height: 35px;
+
+                        &:hover {
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+
+            &-info {
+                @extend %flex-center;
+
+                .example-info__item {
+
+                    &:last-child {
+                        text-align: right;
+                    }
+
+                    &-title {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #545C71;
+                        margin-bottom: 4px;
+                    }
+
+                    &-data {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        position: relative;
+                    }
+
+                    &:first-child .example-info__item-data {
+                        padding-left: 14px;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            background-image: url(../../img/icons/example-icon1.svg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            left: 0;
+                            top: 2px;
+                        }
+                    }
+
+                    &:last-child .example-info__item-data {
+                        padding-left: 14px;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            background-image: url(../../img/icons/example-icon2.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: absolute;
+                            width: 15px;
+                            height: 15px;
+                            left: 0;
+                            top: 0px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

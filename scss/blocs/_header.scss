@@ -1,0 +1,68 @@
+.header {
+    padding-top: 15px;
+    margin-bottom: 80px;
+
+    &__inner {
+        @extend %flex-center;
+
+        .menu {
+            @extend %flex-center;
+            width: 100%;
+            max-width: 330px;
+
+            &__item a {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                transition: $transition;
+
+                &:hover {
+                    text-shadow: 1px 0 0 #fff;
+                }
+            }
+        }
+
+        .header__search {
+            max-width: 242px;
+            width: 100%;
+            position: relative;
+
+            &-input {
+                width: 100%;
+                font-weight: 400;
+                line-height: 13px;
+                padding: 8px 7px;
+                background-color: transparent;
+                border: 1px solid #E5E5E5;
+                border-radius: 5px;
+                color: #fff;
+
+                &::placeholder{
+                    color: #E5E5E5;
+                }
+
+                &:focus{
+                    background-color: #4e5674;
+                }
+            }
+
+            &-btn {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                background-image: url(../../img/icons/search.svg);
+                width: 12px;
+                height: 12px;
+                top: 9px;
+                right: 9px;
+            }
+        }
+
+        .header__login-btn{
+            @extend %btn;
+            line-height: 13px; 
+        }
+
+    }
+}
