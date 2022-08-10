@@ -1,0 +1,30 @@
+.community{
+    margin-bottom: 165px;
+
+    &__inner{
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1E2B4B;
+
+        .community__title{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+
+        .community__text{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 30px;
+        }
+
+        .community__btn{
+            @extend %btn;
+        }
+    }
+}

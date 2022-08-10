@@ -1,0 +1,72 @@
+.footer {
+    padding-bottom: 90px;
+
+    &-top {
+        @extend %flex-center;
+        margin-bottom: 35px;
+
+        &__item {
+
+            &-logo {
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                max-width: 380px;
+                margin-bottom: 25px;
+            }
+
+            .social-list {
+                @extend %flex-center;
+                justify-content: start;
+                gap: 15px;
+
+                &__item:nth-child(1) {
+                    .social-list__item-link {
+                        @include social-icon(url(../../img/icons/viber.svg) center center, url(../../img/icons/viber-hover.svg));
+                    }
+                }
+
+                &__item:nth-child(2) {
+                    .social-list__item-link {
+                        @include social-icon(url(../../img/icons/fb.svg) center center, url(../../img/icons/fb-hover.svg));
+                    }
+                }
+
+                &__item:nth-child(3) {
+                    .social-list__item-link {
+                        @include social-icon(url(../../img/icons/inst.svg) center center, url(../../img/icons/inst-hover.svg));
+                    }
+                }
+
+                &__item:nth-child(4) {
+                    .social-list__item-link {
+                        @include social-icon(url(../../img/icons/youtube.svg) center center, url(../../img/icons/youtube-hover.svg));
+                    }
+                }
+            }
+
+            &-title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom: 7px;
+            }
+
+            .footer-list{
+
+                &__item{
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        @extend %flex-center;
+        color: #545C71;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

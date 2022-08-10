@@ -58,18 +58,7 @@
         }
 
         .create__btn-video {
-            cursor: pointer;
-            background-color: transparent;
-            font-weight: 700;
-            color: #fff;
-            padding: 8px 29px;
-            transition: all .3s;
-            border: 1px solid #fff;
-            border-radius: 5px;
-
-            &:hover{
-                transform: scale(1.05);
-            }
+            @extend %btn-video;
         }
     }
 }

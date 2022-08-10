@@ -23,3 +23,34 @@
         filter: hue-rotate(15deg);
     }
 }
+
+%btn-video {
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px 29px;
+    transition: all .3s;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@mixin social-icon($_img, $_hover-img) {
+    border: 1px solid #7D7AD8;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    transition: $transition;
+    background: $_img;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-image: $_hover-img;
+    }
+}

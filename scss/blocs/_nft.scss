@@ -10,9 +10,24 @@
 
             &-title {
                 font-weight: 700;
-                font-size: 60px;
-                line-height: 77px;
+                font-size: 55px;
+                line-height: 70px;
                 margin-bottom: 15px;
+
+                & span{
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        width: 125px;
+                        height: 23px;
+                        background-image: url(../../img/icons/nft-title.svg);
+                        position: absolute;
+                        right: 0;
+                        bottom: -20px;
+                        background-repeat: no-repeat;
+                    }
+                }
             }
 
             &-text {
