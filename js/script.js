@@ -18,3 +18,11 @@ function tabs(bntArrSelector, contentArrSelector, activeBtnSelector, activeConte
 
 
 tabs('.marketplace__tab', '.marketplace__content', 'marketplace__tab--active', 'marketplace__content--active');
+
+
+//Mobile menu
+document.querySelector('.mobile-menu-btn').addEventListener('click', ()=>{
+    document.querySelector('.mobile-menu-btn').classList.toggle('open');
+    document.querySelector('.mobile-menu').classList.toggle('open');
+    document.querySelector('body').classList.toggle('no-scroll');
+});

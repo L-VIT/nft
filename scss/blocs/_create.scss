@@ -13,7 +13,7 @@
         margin-bottom: 50px;
     }
 
-    .create-algo {
+    &-algo {
         margin-bottom: 50px;
         @extend %flex-center;
         gap: 20px;
@@ -27,6 +27,7 @@
             justify-content: center;
             width: 100%;
             height: 288px;
+            padding: 10px;
 
             &-img {
                 margin-bottom: 17px;
@@ -38,6 +39,7 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 20px;
+                text-align: center;
             }
 
             &-text {

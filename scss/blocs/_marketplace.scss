@@ -29,7 +29,7 @@
                 position: absolute;
                 top: 6px;
                 right: 1px;
-                background-image: url(../../img/icons/marketplace-title-icon.png);
+                background-image: url(../img/icons/marketplace-title-icon.png);
                 background-size: cover;
                 width: 14px;
                 height: 17px;
@@ -43,6 +43,8 @@
             @extend %flex-center;
             flex-wrap: wrap;
             margin-bottom: 50px;
+            justify-content: start;
+            gap: 15px;
 
             .marketplace__tab {
                 font-family: 'DM Mono', monospace;

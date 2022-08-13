@@ -23,25 +23,25 @@
 
                 &__item:nth-child(1) {
                     .social-list__item-link {
-                        @include social-icon(url(../../img/icons/viber.svg) center center, url(../../img/icons/viber-hover.svg));
+                        @include social-icon(url(../img/icons/viber.svg) center center, url(../img/icons/viber-hover.svg));
                     }
                 }
 
                 &__item:nth-child(2) {
                     .social-list__item-link {
-                        @include social-icon(url(../../img/icons/fb.svg) center center, url(../../img/icons/fb-hover.svg));
+                        @include social-icon(url(../img/icons/fb.svg) center center, url(../img/icons/fb-hover.svg));
                     }
                 }
 
                 &__item:nth-child(3) {
                     .social-list__item-link {
-                        @include social-icon(url(../../img/icons/inst.svg) center center, url(../../img/icons/inst-hover.svg));
+                        @include social-icon(url(../img/icons/inst.svg) center center, url(../img/icons/inst-hover.svg));
                     }
                 }
 
                 &__item:nth-child(4) {
                     .social-list__item-link {
-                        @include social-icon(url(../../img/icons/youtube.svg) center center, url(../../img/icons/youtube-hover.svg));
+                        @include social-icon(url(../img/icons/youtube.svg) center center, url(../img/icons/youtube-hover.svg));
                     }
                 }
             }
